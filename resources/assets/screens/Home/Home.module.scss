@@ -1,0 +1,17 @@
+@import '~styles/Variables';
+
+.wrapper {
+  text-align: center;
+  background-color: #0c2538;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+  color: white;
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+}

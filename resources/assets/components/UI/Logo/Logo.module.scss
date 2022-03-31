@@ -1,0 +1,12 @@
+@import 'styles/Variables';
+
+.wrapper {
+  img {
+    background-color: #3bcea9;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    pointer-events: none;
+  }
+}

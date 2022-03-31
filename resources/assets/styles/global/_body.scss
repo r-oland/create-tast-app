@@ -1,0 +1,112 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+input,
+select,
+textarea,
+button,
+label {
+  &:active,
+  &:focus {
+    font-family: $sans-serif;
+    outline: none;
+  }
+}
+
+svg {
+  display: block;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+p,
+ul,
+ol,
+dl,
+address,
+button {
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  outline: inherit;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  border: 0.5px solid;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  padding-left: 1em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+img,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-style: none;
+}
