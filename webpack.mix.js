@@ -21,6 +21,18 @@ mix.webpackConfig({
       path.resolve(__dirname, 'resources/assets'),
     ],
   },
+  // Framer motion fix: https://github.com/framer/motion/issues/1307
+  module: {
+    rules: [
+      {
+        type: 'javascript/auto',
+
+        test: /\.mjs$/,
+
+        include: /node_modules/,
+      },
+    ],
+  },
 });
 
 mix.options({

@@ -55,7 +55,7 @@
     "axios": "^0.26",
     "connected-react-router": "^6.9.2",
     "dotenv-webpack": "^7.1.0",
-    "framer-motion": "^6.2.8",
+    "framer-motion": "^6.3.1",
     "history": "^4.10.1",
     "laravel-mix": "^5.0.9",
     "laravel-mix-react-css-modules": "^2.0.0",
