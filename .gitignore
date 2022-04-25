@@ -1,6 +1,11 @@
 /node_modules
 /public/hot
 /public/storage
+/public/empty.css
+/public/empty.css.map
+/public/mix-manifest.json
+/public/mix.js.map
+/public/js
 /storage/*.key
 /vendor
 .env
