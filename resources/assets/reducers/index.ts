@@ -13,6 +13,7 @@ import { persistReducer } from 'redux-persist';
 import { connectRouter } from 'connected-react-router';
 import { reducer as notificationsReducer } from 'reapop';
 
+import { History } from 'history';
 import authenticationReducer from './authentication';
 
 /**
@@ -25,7 +26,7 @@ const authenticationPersistConfig = {
   whitelist: ['user', 'token'],
 };
 
-export default (history) =>
+export default (history: History<unknown>) =>
   combineReducers({
     router: connectRouter(history),
     notifications: notificationsReducer(),

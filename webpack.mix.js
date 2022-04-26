@@ -48,13 +48,13 @@ mix.sass('resources/empty.scss', 'public/empty.css');
 
 if (mix.inProduction()) {
   mix
-    .reactTypeScript('resources/assets/app.js', 'public/js')
+    .reactTypeScript('resources/assets/app.tsx', 'public/js')
     .reactCSSModules()
     .version()
     .sourceMaps(true);
 } else {
   mix
-    .reactTypeScript('resources/assets/app.js', 'public/js')
+    .reactTypeScript('resources/assets/app.tsx', 'public/js')
     .reactCSSModules()
     .browserSync({
       proxy: 'create-tast-app.test',

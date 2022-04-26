@@ -1,0 +1,3 @@
+type ReduxStore = {
+  authentication?: Authentication;
+};

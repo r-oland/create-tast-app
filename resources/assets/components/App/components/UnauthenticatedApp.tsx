@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+// Components==============
+import React from 'react';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import { createBrowserHistory } from 'history';
@@ -10,6 +11,7 @@ import NotificationsSystem from 'reapop';
 import theme from 'components/UI/Notification/theme';
 import createRootReducer from 'reducers';
 import AppLoader from 'components/App/components/Loader/Loader';
+// =========================
 
 /**
  * Define Redux middleware
@@ -24,7 +26,7 @@ const middleware = [ReduxThunk, routerMiddleware(history)];
 
 const composeEnhancers =
   (process.env.NODE_ENV !== 'production' &&
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+    (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose;
 
 /**
@@ -38,21 +40,22 @@ export const store = createStore(
 
 export const persistor = persistStore(store);
 
-class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <PersistGate persistor={persistor} loading={<AppLoader />}>
-          <ConnectedRouter history={history}>
-            <>
-              {this.props.children}
-              <NotificationsSystem theme={theme} position="tc" />
-            </>
-          </ConnectedRouter>
-        </PersistGate>
-      </Provider>
-    );
-  }
+export default function UnauthenticatedApp({
+  children,
+}: {
+  children: React.ReactChild;
+}) {
+  return (
+    <Provider store={store}>
+      <PersistGate persistor={persistor} loading={<AppLoader />}>
+        {/* @ts-ignore */}
+        <ConnectedRouter history={history}>
+          <>
+            {children}
+            <NotificationsSystem theme={theme} position="tc" />
+          </>
+        </ConnectedRouter>
+      </PersistGate>
+    </Provider>
+  );
 }
-
-export default App;

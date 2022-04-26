@@ -20,6 +20,7 @@ module.exports = {
         map: [
           ['actions', './resources/assets/actions'],
           ['components', './resources/assets/components'],
+          ['hooks', './resources/assets/hooks'],
           ['reducers', './resources/assets/reducers'],
           ['screens', './resources/assets/screens'],
           ['styles', './resources/assets/styles'],
