@@ -23,6 +23,7 @@ module.exports = {
           ['reducers', './resources/assets/reducers'],
           ['screens', './resources/assets/screens'],
           ['styles', './resources/assets/styles'],
+          ['typings', './resources/assets/typings'],
           ['utilities', './resources/assets/utilities'],
         ],
         extensions: ['.js', '.jsx', '.d.ts', '.ts', '.tsx', '.json'],

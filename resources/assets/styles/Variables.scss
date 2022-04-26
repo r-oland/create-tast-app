@@ -2,10 +2,6 @@
  * Variables
  ===========================================================*/
 
-// Fonts
-$sans-serif: 'Fira Sans', sans-serif;
-$serif: 'Crete Round', serif;
-
 //  Colors
 $primary: #1e265c;
 $purple: #6e38a6;
@@ -14,3 +10,51 @@ $yellow: #fed230;
 $white: #ffffff;
 $off-white: #f1f0ea;
 $grey: #707070;
+$black: #000;
+
+// font
+$font: 'Circe', Arial, sans-serif;
+
+// font-sizes
+$font-h1: 28px;
+$font-h2: 22px;
+$font-h3: 18px;
+$font-paragraph: 16px;
+$font-small: 14px;
+$font-extra-small: 12px;
+
+// font-weight
+$weight-normal: 400;
+$weight-bold: 600;
+
+// media queries
+$phone: 525px;
+$tablet: 768px;
+$desktop: 1024px;
+$desktop-large: 1325px;
+
+// spacing
+$spacing1: 0.25rem;
+$spacing2: 0.5rem;
+$spacing3: 0.75rem;
+$spacing4: 1rem;
+$spacing5: 1.25rem;
+$spacing6: 1.5rem;
+$spacing7: 1.75rem;
+$spacing8: 2rem;
+$spacing9: 2.5rem;
+$spacing10: 3rem;
+$spacing11: 4rem;
+$spacing11: 6rem;
+$spacing13: 8rem;
+$spacing14: 12rem;
+$spacing15: 16rem;
+$spacing16: 24rem;
+$spacing17: 30rem;
+$spacing18: 48rem;
+
+// Box-shadow
+$box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+
+// Border-radius
+$border-radius: 7px;
